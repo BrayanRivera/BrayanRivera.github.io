@@ -13,7 +13,9 @@ html {
 
 :root {
     --navbar-color: #260093;
+    --hover-color: #3200bb;
     --content-color: #130047;
+    --yellow-color: #FFE002;
 }
 
 .banner{
@@ -32,17 +34,28 @@ html {
 }
 
 .navbar a {
-    padding: 5px 0;
+    padding: 5px 10px;
     text-decoration: none;
     color: white;
     font-size: 2rem;
+}
+
+.navbar a:hover {
+    background-color: var(--hover-color);
+    filter: none;
+}
+
+.current {
+    color: var(--yellow-color) !important;
+    font-weight: 600;
+    filter: drop-shadow(0px 0px 5px rgb(20, 20, 20));
 }
 
 /* ALL PAGES END */
 
 /* ABOUT PAGE */
 
-.about-title {
+.title {
     padding: 1% 11%;
     color: white;
     font-size: 3rem;
@@ -67,4 +80,75 @@ html {
 }
 
 /* ABOUT PAGES END */
+
+/* PLAYERS PAGE */
+
+.container-players {
+    height: 100%;
+    padding: 0 11%;
+}
+
+.player-info {
+    display: flex;
+    gap: 50px;
+}
+
+.player-info-last {
+    padding-bottom: 50px;
+}
+
+.player-info p {
+    color: white;
+}
+
+.first-row {
+    display: flex;
+}
+
+.player-img {
+    border-radius: 40px;
+    max-width: 320px;
+    max-height: 415px;
+    filter: drop-shadow(0px 0px 10px var(--yellow-color));
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resume div {
+    font-size: 1.3rem;
+    color: white;
+}
+
+.resume span {
+    font-weight: 700;
+}
+
+.rank {
+    margin-left: auto;
+}
+
+.rank-number {
+    font-weight: 400 !important;
+    color: var(--yellow-color);
+}
+
+hr {
+    max-width: 20%;
+    border: 1px solid var(--navbar-color);
+    margin: 50px auto;
+}
+
+.back-top-button {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 50px;
+    filter: invert(86%) sepia(9%) saturate(6003%) hue-rotate(354deg) brightness(108%) contrast(105%);
+}
+
+/* PLAYERS PAGE END */
 
