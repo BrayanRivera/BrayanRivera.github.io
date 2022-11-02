@@ -24,7 +24,7 @@ html {
 
 .banner img {
     max-width: 100%;
-    filter: blur(.5px);
+    filter: blur(0.4px);
 }
 
 .navbar {
@@ -60,6 +60,10 @@ html {
     color: white;
     margin-top: 20px;
     padding: 5px 20px;
+}
+
+.footer-tutorials {
+    margin-top: 100px;
 }
 
 /* ALL PAGES END */
@@ -164,6 +168,12 @@ hr {
 /* PLAYERS PAGE END */
 
 /* TOURNAMENTS PAGE */
+
+.title-tournaments {
+    padding: 3% 11% 0 11%;
+    color: white;
+    font-size: 3rem;
+}
 
 .cards {
     display: flex;
@@ -290,3 +300,43 @@ li:last-child {
 }
 
 /* TOURNAMENTS PAGE END */
+
+/* TUTORIALS PAGE */
+
+.title-tutorials {
+    padding: 3% 11% 3% 11%;
+    color: white;
+    font-size: 3rem;
+}
+
+.container-videos {
+    height: 100%;
+    padding: 0 11%;
+}
+
+.tutorial-info {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.video {
+    max-width: 100%;
+    border-radius: 40px;
+    filter: drop-shadow(0px 0px 10px var(--yellow-color));
+}
+
+.video-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.player-info-last {
+    padding-bottom: 50px;
+}
+
+/* TUTORIALS PAGE END */
