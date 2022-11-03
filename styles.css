@@ -71,18 +71,45 @@ html {
 /* ABOUT PAGE */
 
 .title {
-    padding: 3% 11% 3% 11%;
+    padding: 3% 11% 1% 11%;
     color: white;
     font-size: 3rem;
 }
 
-.container {
+.container-fr {
     display: flex;
     height: 100%;
-    padding: 0 11% 1% 11%;
+    padding: 0 11% 0 11%;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.container-sr {
+    padding: 0 11% 1% 11%;
+}
+
+.container-sr p {
+    color: white;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+
+.container-tr {
+    margin: 50px 0;
+    display: flex;
+    gap: 60px;
+    color: white;
+    padding: 0 11% 0 11%;
+}
+
+.about-extra {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.about-extra p {
+    font-size: 1.2rem;
 }
 
 .container-about p {
@@ -90,13 +117,22 @@ html {
     font-size: 1.3rem;
 }
 
+.video-about {
+    margin-bottom: 40px;
+}
+
 .logo-melee {
     width: 500px;
+    margin-bottom: 30px;
 }
 
 /* ABOUT PAGES END */
 
 /* PLAYERS PAGE */
+
+.title-players {
+    margin-bottom: 25px;
+}
 
 .container-players {
     height: 100%;
@@ -191,9 +227,7 @@ hr {
     margin: 20px;
     width: 320px;
     border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 17px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 1px rgb(255, 232, 28);
 }
 
 .card * {
