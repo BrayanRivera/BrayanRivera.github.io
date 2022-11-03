@@ -374,3 +374,34 @@ li:last-child {
 }
 
 /* TUTORIALS PAGE END */
+
+/* PLAY PAGE */
+
+.container-play {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 11%;
+    color: white;
+    margin: none;
+}
+
+.container-play p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.container-play img {
+    width: 300px;
+}
+
+.play-button {
+    width: 400px;
+    margin: 50px auto 50px auto;
+}
+
+.play-button a img {
+    width: 400px;
+}
+
+/* PLAY PAGE END */
