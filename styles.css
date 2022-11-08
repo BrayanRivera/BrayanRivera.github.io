@@ -11,6 +11,12 @@ html {
     max-height: 100%;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 :root {
     --navbar-color: #260093;
     --hover-color: #3200bb;
@@ -23,7 +29,8 @@ html {
 }
 
 .banner img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     filter: blur(0.4px);
 }
 
@@ -66,6 +73,10 @@ html {
     margin-top: 100px;
 }
 
+.footer-play {
+    margin-top: auto;
+}
+
 /* ALL PAGES END */
 
 /* ABOUT PAGE */
@@ -96,7 +107,7 @@ html {
 }
 
 .container-tr {
-    margin: 50px 0;
+    margin: 50px 0 70px 0;
     display: flex;
     gap: 60px;
     color: white;
@@ -221,7 +232,7 @@ hr {
     justify-content: center;
     flex-wrap: wrap;
     padding: 3% 0 0 0;
-    margin: 0 7%;
+    margin: 0 7% 3% 7%;
     gap: 80px;
 }
 
