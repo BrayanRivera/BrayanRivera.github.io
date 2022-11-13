@@ -77,6 +77,10 @@ body {
     margin-top: auto;
 }
 
+.footer a {
+    color: white;
+}
+
 /* ALL PAGES END */
 
 /* ABOUT PAGE */
@@ -87,23 +91,60 @@ body {
     font-size: 3rem;
 }
 
-.container-fr {
-    display: flex;
-    height: 100%;
-    padding: 0 11% 0 11%;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.container-sr {
-    padding: 0 11% 1% 11%;
-}
-
-.container-sr p {
+.subtitles {
+    padding: 3% 11% 1% 11%;
     color: white;
-    padding-top: 10px;
-    font-size: 1.3rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.hr-container {
+    height: 100%;
+    padding: 3% 11%;
+}
+
+.hr-about {
+    max-width: 20%;
+    border: 1px solid var(--navbar-color);
+    margin: 50px auto;
+}
+
+.container {
+    padding: 0 11%;
+    display: flex;
+}
+
+.container-fr {
+    margin-top: 4%;
+}
+
+.portion-title {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.portion-img {
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.portion-img img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.img-blur {
+    filter: blur(0.5px);
+}
+
+.portion-img .portion-img--player {
+    filter: drop-shadow(0px 0px 10px var(--yellow-color));
 }
 
 .container-tr {
@@ -135,6 +176,13 @@ body {
 .logo-melee {
     width: 500px;
     margin-bottom: 30px;
+}
+
+.title-bottom {
+    text-align: center;
+    padding: 0 11% 3% 11%;
+    color: white;
+    font-size: 3rem;
 }
 
 /* ABOUT PAGES END */
