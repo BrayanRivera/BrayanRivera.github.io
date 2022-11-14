@@ -6,27 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CompetitiveMelee</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
 <body>
-    <header class="banner">
-        <a href="index.html"><img src="img/Banner.png" alt=""></a>
-    </header>
-    <nav class="navbar">
-        <a href="index.html">ABOUT</a>
-        <a href="players.html">PLAYERS</a>
-        <a href="tournaments.html">TOURNAMENTS</a>
-        <a href="tutorials.html">TUTORIALS</a>
-        <a href="play.html">PLAY</a>
+  <header class="banner">
+      <a href="index.html"><img src="img/Banner.png" alt=""></a>
+  </header>
+  <nav class="navbarr">
+      <a href="index.html">ABOUT</a>
+      <a href="players.html">PLAYERS</a>
+      <a href="tournaments.html">TOURNAMENTS</a>
+      <a href="tutorials.html">TUTORIALS</a>
+      <a href="play.html">PLAY</a>
+  </nav>
+  <div class="content-contact">
+    <h3 id="hh"></h3>
+    <div class="email-content">
+      <h1>Send me a message!</h1>
+      <form class="email" action="https://formspree.io/f/mnqrwaoe" method="POST">
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <nav>
+      <div>
+        <form>
+          <ul>
+              <li>
+                <a id="userlink" class="" href="#">Username</span></a>
+              </li>
+              <li>
+                <a id="signoutlink" class="" href="index.html">Sign Out</span></a>
+              </li>
+            </ul>
+        </form>
+      </div>
     </nav>
 
-    
-
+    <script src="contactJS.js"></script>
+  </div>
 </body>
-<footer class="footer footer-play">
-    <p>By: Brayan Israel Rivera Almaguer</p>
-    <div>
-        <a href="contact.html">Contact me!</a>
-    </div>
+<footer class="footerr footerr-play">
+    <p>By: Brayan Rivera</p>
     <p>Front End - PIA</p>
 </footer>
 </html>
